@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess the Number Game</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>🎯 Guess the Number Game</h1>
+        <p>I have selected a number between 1 and 100. Try to guess it!</p>
+        <input type="number" id="guessInput" placeholder="Enter your guess">
+        <button onclick="makeGuess()">Guess</button>
+        <p id="message"></p>
+        <p id="attempts"></p>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
